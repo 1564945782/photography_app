@@ -1,0 +1,32 @@
+.top{
+    background-color: pink;
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.top a span{
+	font-size: 0.4rem;
+    color: #fff;
+}
+
+.top .left00{
+	margin-left: 0.5rem;
+}
+
+.top .right00{
+	margin-right: 0.5rem;
+}
+.top .share{
+	    font-size: 0.8rem;
+}
+
+
+
+
+

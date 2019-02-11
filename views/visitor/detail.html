@@ -1,0 +1,227 @@
+<% include header.html%>
+
+<link rel="stylesheet" type="text/css" href="/css/detail.css">
+
+<title>个人信息设置</title>
+</head>
+
+<body>
+<div class="head03">
+	<a href="/visitor/my">
+		<span class="glyphicon glyphicon-menu-left">			
+		</span>
+		<i>返回</i>
+	</a>
+	<div class="head033">
+		<span id="">个人信息</span>	
+	</div>
+
+</div>
+
+ 
+<form class="layui-form" action="" id="detail01">
+	<!--头像-->
+  <div class="layui-form-item touxiang01 tongyi">
+  <div class="col-xs-10 col-sm-10 col-md-10 col-md-offset-10 aaa">
+    <label class="layui-form-label" for="touxiang">头像</label>
+    <img src="/img/main02.png"/>
+    <div class="layui-input-block inp01">
+      <input type="file" name="touxiang" id="touxiang" lay-verify="touxiang" autocomplete="off" placeholder="请选择图片" class="layui-input">
+    </div>
+  </div>
+  <div class="col-xs-2 col-sm-2 col-md-2 col-md-offset-2 ccc">
+    <span class="glyphicon glyphicon-menu-right">
+    </span></div>
+  </div>
+
+    <!--签名-->
+  <div class="layui-form-item sings01 tongyi text01">
+    <div class="col-xs-3 col-sm-3 col-md-3 col-md-offset-3 aaa">
+      <label class="layui-form-label" for="signs">签名</label>
+    </div>
+    <div class="col-xs-7 col-sm-7 col-md-7 col-md-offset-7 bbb">
+    <div class="layui-input-block">
+      <input type="text" name="signs" id="signs" placeholder="请输入" autocomplete="off" class="layui-input" >
+    </div>
+    </div>
+    <div class="col-xs-2 col-sm-2 col-md-2 col-md-offset-2 ccc">
+    <span class="glyphicon glyphicon-menu-right">
+    </span></div>
+  </div>
+  
+  <!--昵称-->
+  <div class="layui-form-item username01 tongyi text01">
+    <div class="col-xs-3 col-sm-3 col-md-3 col-md-offset-3 aaa">
+      <label class="layui-form-label" for="username">昵称</label>
+    </div>
+    <div class="col-xs-7 col-sm-7 col-md-7 col-md-offset-7 bbb">
+    <div class="layui-input-block">
+      <input type="text" name="username" id="username" placeholder="请输入" autocomplete="off" class="layui-input" value=<%= u_name%>>
+    </div>
+    </div>
+    <div class="col-xs-2 col-sm-2 col-md-2 col-md-offset-2 ccc">
+    <span class='glyphicon glyphicon-menu-right'></span>
+    </div>
+  </div>
+  
+  <!--性别-->
+  <div class="layui-form-item sex01 tongyi sex01">
+  <div class="col-xs-3 col-sm-3 col-md-3 col-md-offset-3 aaa">
+    <label class="layui-form-label">性别</label>
+  </div>
+  <div class="col-xs-9 col-sm-9 col-md-9 col-md-offset-9 bbb">
+    <div class="layui-input-block xuanze">
+      <input type="radio" name="sex" value="男" title="男" checked="">
+      <input type="radio" name="sex" value="女" title="女">
+    </div>
+  </div>
+  </div>
+  
+  	
+  <!--生日-->
+  <div class="layui-form-item tongyi both01">
+    <div class="col-xs-3 col-sm-3 col-md-3 col-md-offset-3 aaa">
+      <label class="layui-form-label">生日</label>
+    </div>
+    <div class="col-xs-7 col-sm-7 col-md-7 col-md-offset-7 bbb">
+      <div class="layui-input-inline both02">
+        <input type="text" name="date" id="date" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+      </div>
+    </div>
+    <div class="col-xs-2 col-sm-2 col-md-2 col-md-offset-2 ccc">
+	  <span class="glyphicon glyphicon-menu-right">
+    </span></div>
+  </div>
+
+<!--手机、邮箱-->
+ <div class="layui-form-item tongyi yanzheng">
+    <div class="col-xs-3 col-sm-3 col-md-3 col-md-offset-3 aaa">
+      <label class="layui-form-label">手机</label>
+    </div>
+    <div class="col-xs-7 col-sm-7 col-md-7 col-md-offset-7 bbb">
+      <div class="layui-input-inline yanzheng01">
+        <input type="tel" name="phone" lay-verify="required|phone" placeholder="xxx" autocomplete="off" class="layui-input">
+      </div>
+    </div>
+    <div class="col-xs-2 col-sm-2 col-md-2 col-md-offset-2 ccc">
+      <span class="glyphicon glyphicon-menu-right">
+    </span>
+    </div>
+    
+</div>
+
+<div class="layui-form-item tongyi yanzheng">
+    <div class="col-xs-3 col-sm-3 col-md-3 col-md-offset-3 aaa">
+      <label class="layui-form-label">邮箱</label>
+    </div>
+    <div class="col-xs-7 col-sm-7 col-md-7 col-md-offset-7 bbb">
+      <div class="layui-input-inline yanzheng01">
+        <input type="text" name="email" placeholder="xxx" lay-verify="email" autocomplete="off" class="layui-input">
+      </div>
+    </div>
+    <div class="col-xs-2 col-sm-2 col-md-2 col-md-offset-2 ccc">
+      <span class="glyphicon glyphicon-menu-right">
+    </span>
+    </div>    
+  </div>  
+
+<!--职业-->
+  <div class="layui-form-item tongyi profession">
+    <div class="col-xs-3 col-sm-3 col-md-3 col-md-offset-3 aaa">
+      <label class="layui-form-label">职业</label>
+    </div>
+    <div class="col-xs-7 col-sm-7 col-md-7 col-md-offset-7 bbb">
+      <div class="layui-input-inline profession01">
+        <select name="modules" lay-verify="required" lay-search="">
+          <option value="摄影师">摄影师</option>
+          <option value="记者">记者</option>
+          <option value="程序员">程序员</option>
+          <option value="演员">演员</option>
+          <option value="平面设计师">平面设计师</option>
+          <option value="摄影助理">摄影助理</option>
+          <option value="后期师">后期师</option>
+          <option value="插画师">插画师</option>
+          <option value="歌手">歌手</option>
+          <option value="作家">作家</option>
+          <option value="主持人">主持人</option>
+          <option value="教师">教师</option>
+          <option value="公务员">公务员</option>
+          <option value="警察">警察</option>
+          <option value="工程师">工程师</option>
+          <option value="普通工人">普通工人</option>
+          <option value="保安">保安</option>
+          <option value="厨师">厨师</option>
+          <option value="翻译家">翻译家</option>
+          <option value="科学家">科学家</option>
+        </select>
+      </div>
+    </div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-md-offset-2 ccc">
+      <span class="glyphicon glyphicon-menu-right"></span>
+      </div>
+
+  </div>
+  
+  <!--地址-->
+  <div class="layui-form-item tongyi address01">
+  <div class="col-xs-3 col-sm-3 col-md-3 col-md-offset-3 aaa">
+    <label class="layui-form-label">地址</label>
+  </div>
+  <div class="col-xs-7 col-sm-7 col-md-7 col-md-offset-7 bbb">
+    <div class="layui-input-inline address02">
+      <select id="province" name="province">
+        <option value="">--省--</option>
+        <option value="浙江" selected="">浙江省</option>
+        <option value="你的工号">江西省</option>
+        <option value="你最喜欢的老师">福建省</option>
+      </select>
+    </div>
+    <div class="layui-input-inline address02">
+      <select id="city" name="city">
+        <option value="">--市--</option>
+        <option value="杭州">杭州</option>
+        <option value="宁波" disabled="">宁波</option>
+        <option value="温州">温州</option>
+        <option value="温州">台州</option>
+        <option value="温州">绍兴</option>
+      </select>
+    </div>
+    <div class="layui-input-inline address02">
+      <select id="area" name="area">
+        <option value="">--县/区--</option>
+        <option value="西湖区">西湖区</option>
+        <option value="余杭区">余杭区</option>
+        <option value="拱墅区">临安市</option>
+      </select>
+    </div>
+  </div>
+  </div>
+
+<!--个人说明-->
+  <div class="layui-form-item layui-form-text tongyi person01">
+  <div class="col-xs-3 col-sm-3 col-md-3 col-md-offset-3 aaa">
+    <label class="layui-form-label">个人说明</label>
+  </div>
+  <div class="col-xs-9 col-sm-9 col-md-9 col-md-offset-9 bbb">
+    <div class="layui-input-block person02">
+      <textarea placeholder="请输入内容" class="layui-textarea" name="intruduce"></textarea>
+    </div>
+    </div>
+  </div>
+ 
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button type="button" class="layui-btn" lay-submit="" lay-filter="demo1">保存</button>
+      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+    </div>
+  </div>
+</form>
+
+
+          
+<script src="/js/detail.js" charset="utf-8"></script>
+<!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+
+
+</body>
+</html>

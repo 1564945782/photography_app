@@ -1,0 +1,79 @@
+<% include header.html%>
+
+<link rel="stylesheet" type="text/css" href="/css/works.css">
+
+<title>论坛</title>
+</head>
+
+<body>
+	<div class="lianji00">
+		<p>搜索内容：</p>
+	</div>
+
+<div class="xunhuan">
+	
+
+<% for (let c of works_list){%>	
+	<div class="works01">
+		
+		<div class="header02">			
+			<div class="col-xs-4 col-sm-4 col-md-4 col-md-offset-4 touxiang to01">
+				<img src="/img/main02.png"/>
+				<p><%= c.u_name%></p>
+			</div>
+
+			<div class="col-xs-4 col-sm-4 col-md-4 col-md-offset-4 to01">
+				<p></p>
+			</div>
+
+			<div class="col-xs-4 col-sm-4 col-md-4 col-md-offset4 guanzhu to01">
+				<a href="#">
+					<span class="glyphicon glyphicon-plus"></span>
+					<span id=""> 关注</span>
+				</a>
+			</div>	
+					
+		</div>
+
+		<div class="title">
+			<a href=/visitor/wdetail?uid=<%= uid%>&w_uid=<%= c.uid%>&wid=<%= c.wid%>>
+			<span class="descript"><%= c.descript%></span>
+			</a>
+		</div>
+		<div class="picture01">
+			<ul>
+				<% for (let a of c.pic_address_list){%>	
+				<li class="first01"><img src=<%= `${a.split(':81/')[1]}`%>></li>
+				<% }%>
+			</ul>
+		</div>
+		<div style="clear: both;"></div>
+		<div class="comment02">
+			<p class="liulan">
+				<a href="">
+				<span class="glyphicon glyphicon-eye-open"></span>
+				<span id=""><%= c.saw_nums%></span>
+				</a>
+			</p>
+			<p class="liulan pinglun">
+				<a href="">
+				<i class="layui-icon layui-icon-reply-fill"></i>
+				<span id=""><%= c.com_list_nums%></span>
+				</a>
+			</p>
+			<p class="liulan zan">
+				<a href="">
+				<i class="layui-icon layui-icon-face-smile-b"></i>  
+				<span id=""><%= c.zan_nums%></span>
+				</a>
+			</p>
+		</div>
+	</div>
+<% }%>
+</div>	
+
+<footer>没有更多内容...</footer>	
+	
+	
+<!--<script src="/js/my.js "></script>-->
+<% include aside.html%>

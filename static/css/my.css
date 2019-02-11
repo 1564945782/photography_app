@@ -1,0 +1,153 @@
+html {
+	font-size: 0.625rem;
+}
+
+body {
+	background: rgb(239, 239, 239);
+	/*font-size: 0.14rem;*/
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+
+.header {
+	background-color: pink;
+	height: 14.5rem;
+	color: white;
+	font-size: 1.6rem;
+	padding-left: 0.17rem;
+	padding-right: 0.25rem;
+	margin-top: -1rem;
+}
+
+.header a {
+	display: flex;
+	padding-top: 11rem;
+	justify-content: center;
+	height: 6rem;
+}
+
+.header a img {
+	width: 6rem;
+	height: 6rem;
+	border-radius: 3rem;
+}
+
+.header>.btn {
+	float: right;
+	padding-top: 0.8rem;
+	margin-top: -10rem;
+}
+
+.btn>span {
+	border-radius: 100%;
+	display: block;
+	width: 0.5rem;
+	height: 0.5rem;
+	background: white;
+	margin-top: 0.7rem;
+}
+
+.text .u_name {
+	display: flex;
+	padding-top: 4rem;
+	justify-content: center;
+	height: 3rem;
+	font-weight:700;
+	font-size: 1.8rem;
+}
+
+.text .biaoqian {
+	display: flex;
+	padding-top: 3rem;
+	justify-content: center;
+	height: 6rem;
+}
+
+.username {
+	background-color: #fefcfc;
+}
+
+.username .fensi {
+	display: flex;
+	justify-content: space-around;
+	height: 6rem;
+}
+
+.username .bt {
+	display: flex;
+	/*justify-content: space-between;*/
+	/*height: 6rem;*/
+	align-items: center;
+}
+
+.username p {
+	display: flex;
+	margin-top: -0.8rem;
+	justify-content: center;
+}
+
+.fensi a {
+	color: #1B1B1B;
+	
+}
+
+.address {
+	height: 6rem;
+	font-size: 1.6rem;
+	margin-top: 0.5rem;
+	background-color: #fefcfc;
+	
+}
+
+.address a {
+	display: inline-block;
+    height: 6rem;
+    width: 100%;
+    color: #1B1B1B;
+}
+.address a div{
+	height: 6rem;
+	line-height: 6rem;
+	margin: 0rem;
+    padding: 0rem 2rem;
+}
+.address .bbb span{
+	float: right;
+    line-height: 6rem;
+}
+
+.address .text01{
+	margin-left: -20rem;
+}
+
+.out01{
+	height: 14rem;
+	background-color: #fefcfc;
+	margin-top: 0.5rem;
+}
+.out01 {
+    display: flex;
+    /* align-content: center; */
+    justify-content: center;
+}
+.out01 div{
+	margin-top: 2.2rem;
+	width: 13rem;
+    height: 4.2rem;
+    border: 0.3rem solid #e6e4e2;
+    display: flex;
+    line-height: 4.2rem;
+    justify-content: center;
+}
+.out01 div a{
+	margin: 0rem;
+    padding: 0rem;
+    height: 4.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

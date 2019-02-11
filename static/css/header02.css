@@ -1,0 +1,31 @@
+body {
+    background: rgb(239, 239, 239);
+}
+
+.header {
+    background: pink;
+    height: 5.65rem;
+    color: white;
+    padding: 0rem 1rem;
+    text-align: center;
+    line-height: 5.65rem;
+}
+
+.header>a {
+    color: white;
+    float: left;
+}
+
+.header>.btn {
+    float: right;
+    padding-top: 1rem;
+}
+
+.btn>span {
+    border-radius: 100%;
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background: white;
+    margin-top: 0.33rem;
+}

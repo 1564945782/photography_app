@@ -1,0 +1,141 @@
+<% include header.html%>
+
+    <link rel="stylesheet" type="text/css" href="/css/header02.css">
+    <link rel="stylesheet" type="text/css" href="/css/wdetail.css">
+
+    <title>作品详情</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <a href="/visitor/app">
+                <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+            </a>
+            作品详情
+            <div class="btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="works01">
+            <span id="uid"><%= uid%></span>
+            <span id="touxiang"><%= works_detail[0].touxiang%></span>
+            <span id="wid"><%= wid%></span>
+            <div class="header02">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-md-offset-3 touxiang to01">
+                    <img src="/img/main02.png" />
+                    <p><%= works_detail[0].u_name%></p>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-md-offset-3 to01">
+                    <p></p>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-md-offset6 times01 to01">
+                    <span class="time01"> <%= works_detail[0].addtimes%></span>
+                </div>
+
+            </div>
+            <div class="title">
+                <a href=""><span class="descript"><%= works_detail[0].descript%></span></a>
+            </div>
+            <div class="picture01">
+                <ul>
+
+                    <% for (let b of works_detail.pic_list){%>
+                        <li class="first01"><img src=<%=` ${b}`%>></li>
+                        <% }%>
+                </ul>
+            </div>
+            <div style="clear: both;"></div>
+            <div class="comment02">
+                <p class="liulan">
+                    <a href="">
+                        <span class="glyphicon glyphicon-eye-open"></span>
+                        <span id=""><%= works_detail[0].saw_nums*1+1%></span>
+                    </a>
+                </p>
+                <p class="liulan pinglun">
+                    <a href="##">
+                     <label for="pinglun01">
+                        <i class="layui-icon layui-icon-reply-fill"></i>
+                        <span id="pinglin_num00"><%= com_list_nums%></span>
+                     </label>
+                    </a>
+                </p>
+                <p class="liulan zan">
+                    <a href="##">
+                        <i class="layui-icon layui-icon-face-smile-b"></i>
+                        <span id=""><%= works_detail[0].zan_nums%></span>
+                    </a>
+                </p>
+            </div>
+            <!-- 评论总数 -->
+            <div class="comment_area">
+            <div class="totals"><span><%= com_list_nums%></span> 条评论</div>
+            <% for (let b of com_list){%>
+            <div class="friends">
+                
+                <div class="touxiang">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-md-offset-3 touxiang to02">
+                        <a href="#"> <img src="/img/notx.png" /></a>
+                        <p>匿名</p>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-md-offset-3 to02">
+                        <p></p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-md-offset6 times01 to02">
+                        <span id="time01"> <%= b.time01%></span>
+                    </div>
+                </div>
+
+                <div class="comments03"><p><%= b.comments%></p></div>
+
+            </div>
+            <% }%>
+            
+            </div>
+
+            <div class="no01">没有更多内容</div>
+        </div>
+
+
+
+
+        <nav class="navbar navbar-default navbar-fixed-bottom footer02">
+            <div class="comment02">
+                <div class="col-xs-8 col-sm-8 col-md-8 col-md-offset-8 to03">
+                    <input type="text" placeholder="评论" class="pinglun01" id="pinglun01" name="pinglun01">
+                </div>
+
+                <div class="col-xs-2 col-sm-2 col-md-2 col-md-offset-2 to03" id="send01"><p>发送</p></div>
+                <div class="col-xs-2 col-sm-2 col-md-2 col-md-offset-2 to03">
+                    <p class="liulan zan">
+                        <a href="##">
+                            <i class="layui-icon layui-icon-face-smile-b"></i>
+                            <span id="zan"><%= works_detail[0].zan_nums%></span>
+                     </a>
+                    </p>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="/js/wdetail.js"></script>
+
+    </body>
+
+    </html>

@@ -1,0 +1,151 @@
+html{
+	font-size: 62.5% ;
+}
+ body{
+ 	font-size:12px;
+ 	font-size:1.2rem ;
+ 	color: #fff;
+ 	line-height: 1.5;
+ }
+ /*聊天区域 */
+.content{
+    margin-top: 2.1rem;
+
+    margin-bottom: 1.5rem;
+}
+
+.talk_show{
+    width: 97%;
+    
+     background-color: #fff;
+    margin: 0.1rem auto 0;
+    overflow: auto;
+    font-size: 0.5rem;
+    
+     margin-bottom: 1.5rem;
+}
+.talk_show img{
+    width: 1rem;
+    height: 1rem;
+    border: 0.02rem solid #bbb;
+    border-radius: 50%;
+}
+.talk_show .atalk{
+	margin:0.5rem; 
+	display: flex;
+}
+.talk_show .atalk .right00{ 
+    background-color: hsla(0, 0%, 100%, 0);
+    color: #0181cc;
+    margin: 0rem;
+    padding: 0rem;
+    margin-top: 0.25rem;
+    font-size: 0.4rem;
+}
+.talk_show .atalk .asay{
+    display: inline-block;
+    background: #0181cc;
+    border-radius: 0.1rem;
+    color: #fff;
+    max-width: 5rem;
+    text-align: left;
+    padding: 0.05rem 0.2rem;
+    margin-left: -0.13rem;
+}
+.talk_show .btalk{
+	margin:0.5rem;
+    text-align:right;
+	background-color: #fff;
+}
+
+.talk_show .btalk .bsay{
+    display:inline-block;
+    background:#ef8201;
+    border-radius:0.1rem;
+    color:#fff;
+    padding:0.05rem 0.1rem;
+    max-width: 5rem;
+    text-align: left;
+    padding: 0.05rem 0.2rem;
+    margin-right: 1.34rem;
+}
+.talk_show .btalk .bsay i{}
+.talk_show .btalk i{
+
+    position: absolute;
+    margin: 0rem;
+    padding: 0rem;
+    font-size: 0.55rem;
+    margin-left: -1.5rem;
+    color: #ef8201;
+}
+.talk_show .btalk img{
+	position: absolute;
+    margin-left: -1rem;
+}
+
+/* 底部评论区 */
+
+.footer02 {
+    border-top: 0.01rem solid rgb(223, 222, 222);
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.4rem;
+}
+
+.footer02 .comment02 {
+    height: 1rem;
+    width: 100%;
+    display: flex;
+
+}
+.footer02 .comment02 div{
+   font-size: 0.4rem;
+   text-align: center;
+   line-height: 0.9rem;
+}
+.footer02 .comment02 .yuyin_send{
+    width: 10%;
+}
+.footer02 .comment02 .yuyin_send i{
+    border: 0.02rem solid #6b6161;
+    border-radius: 50%;
+    font-size: 0.7rem;
+	color: #4a4848;
+}
+.footer02 .comment02 .content_send{
+    width: 70%;
+    background-color: #b95959;
+}
+.footer02 .comment02 .content_send input{
+    height: 1rem;
+    width: 100%;
+    outline: none;
+    border: 0rem;
+    color: #2d2a2a;
+    background-color: #eae5e5;
+    padding-left: 0.4rem;
+}
+.footer02 .comment02 .submit_send{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+.footer02 .comment02 .submit_send p{
+    margin: 0rem;
+    padding: 0rem;
+    height: 1rem;
+    width: 90%;
+    text-align: center;
+    line-height: 1rem;
+    background-color: #cac1c1;
+}
+.footer02 .comment02 .motions_send{
+	width: 10%;
+}
+.footer02 .comment02 .motions_send a{}
+.footer02 .comment02 .motions_send i{
+	    font-size: 0.7rem;
+}

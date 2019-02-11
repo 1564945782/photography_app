@@ -1,0 +1,30 @@
+/*内容*/
+.content{
+    margin-top: 0.1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 7rem;
+}
+.content .head01 div{
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content .head01 img{
+    width: 4.5rem;
+    margin-top: 2rem;
+}
+.content .head01 h2,p{
+	text-align: center;
+	margin-top: 0.5rem;
+}
+/*底部*/
+.footer01{
+   height: 20%;
+    background-color: #fff;
+    border-color: #e7e7e787;
+}
+.footer01 p{
+    /*height: 30% !important;*/
+}

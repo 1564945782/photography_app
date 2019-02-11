@@ -1,0 +1,207 @@
+.works01 {
+    margin-top: 0.02rem;
+    background-color: #fff;
+
+}
+
+.works01 #uid {
+    display: none;
+}
+
+.works01 #wid {
+    display: none;
+}
+.works01 #touxiang {
+    display: none;
+}
+/*top部分*/
+.works01 .header02 {
+    height: 4.5rem;
+    padding: 0rem;
+    margin: 0rem;
+}
+.works01 .header02 .to01{
+    height: 4.5rem;
+    padding: 0.5rem;
+    margin: 0rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header02 .touxiang {
+    /*margin-left: 1rem;*/
+}
+
+.header02 .time01 {
+    /*display: inline-block;
+    padding-right: 2rem;*/
+}
+
+.header02 .touxiang img {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    background-color: burlywood;
+}
+
+.header02 p {
+    color: palevioletred;
+    margin: 0rem;
+}
+.header02 .times01 span{
+
+}
+
+
+
+.works01 .title {
+    padding: 0.5rem;
+    text-indent: 1.5rem;
+    border-top: 0.2rem solid #efefef;
+}
+.works01 .title a {
+    display: block;
+    color: #333;
+}
+
+.works01 .picture01 ul {
+    padding: 0 0.5rem;
+}
+
+.works01 .picture01 ul li {
+    float: left;
+    list-style: none;
+    width: 11.1rem;
+    height: 11.1rem;
+    margin: 0.02rem;
+}
+
+.works01 .picture01 ul li img {
+    width: 11.05rem;
+    height: 11.05rem;
+    border: 0.1rem solid #bbb;
+    padding: 0.01rem;
+}
+
+.works01 .comment02 {
+    height: 3rem;
+    line-height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.works01 .comment02 .liulan a {
+    color: #333;
+    margin: 0rem;
+}
+
+
+/* 好友评论列表 */
+
+.works01 .friends {
+    border-top: 0.1rem solid #e7e4e4;
+    background-color: #fff;
+    margin-bottom: 0.2rem;
+}
+
+.works01 .friends .touxiang {
+    height: 4rem;
+}
+.works01 .friends .touxiang .to02{
+    height: 4rem;
+    padding: 0.5rem;
+    margin: 0rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.works01 .friends a {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.works01 .friends img {
+    height: 3rem;
+    width: 3rem;
+    margin-top: 2rem;
+    border-radius: 50%;
+}
+.works01 .friends .touxiang p {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.works01 .friends .comments03 p{
+    text-indent: 3rem;
+    padding: 0rem 1.5rem;
+    word-wrap: break-word;
+}
+.works01 .comment_area {
+    border-top: 0.01rem solid rgb(241, 235, 235);
+}
+.works01 .totals {
+    padding: 1rem 2rem 1rem;
+}
+
+.works01 .no01 {
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+}
+
+
+/* 底部评论区 */
+
+.footer02 {
+    border-top: 0.1rem solid rgb(223, 222, 222);
+    background-color: #fff;
+}
+
+.footer02 .comment02 {
+    height: 4rem;
+    width: 100%;
+}
+.footer02 .comment02 .to03{
+    height: 4rem;
+    padding: 0.5rem;
+    margin: 0rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer02 .comment02 #send01{
+    padding: 0rem;
+}
+.footer02 .comment02 #send01 p{
+    margin: 0rem;
+    padding: 0rem;
+}
+.footer02 .comment02 .zan a {
+    color: #433f3f;
+    display: flex;
+    height: 3rem;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.footer02 .comment02 .pinglun01 {
+    height: 3rem;
+    width: 100%;
+    background-color: #f2ebeb;
+    padding-left: 2rem;
+    outline: none;
+    border: 0rem;
+    border-radius: 2rem;
+}
+.footer02 .comment02 .to03 .zan{
+    margin: 0rem;
+    padding: 0rem;
+    width: 100%;
+}

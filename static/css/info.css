@@ -1,0 +1,78 @@
+.address {
+    height: 5.6rem;
+    margin-top: 0.1rem;
+    background-color: #fefcfc;
+}
+
+.address a {
+    display: inline-block;
+    height: 5.6rem;
+    width: 100%;
+    text-align: center;
+    line-height: 5.2rem;
+    color: #1B1B1B;
+    text-decoration: none;
+    padding: 0.2rem;
+}
+
+.address .text01 {
+    font-size: 1.7rem;
+    width: 8rem;
+    height: 4.4rem;
+    text-align: left;
+    line-height: 4.4rem;
+    margin: 0rem;
+    padding: 0rem;
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+    float: left;
+}
+
+.address .text01 p {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.address .zan {
+    background-color: rgba(255, 87, 34, 0.8313725490196079);
+    width: 4.4rem;
+    height: 4.4rem;
+    text-align: center;
+    line-height: 4.4rem;
+    border-radius: 50%;
+    margin: 0rem;
+    padding: 0rem;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    float: left;
+}
+.address .zan span{
+    font-size: 2rem;
+}
+.address #right001{
+    float: right;
+    padding-right: 1rem;
+}
+.address .comment01 {
+    background-color: rgba(255, 152, 0, 0.7803921568627451);
+}
+
+.address .fan01 {
+    background-color: rgb(127, 245, 127);
+}
+
+.address .collection01 {
+    background-color: rgb(0, 188, 212);
+}
+.address .robot01 {
+    background-color:  rgb(131, 122, 215);
+}
+
+.address #zan {
+    color: #fffdfd;
+}
+
+.address #zan span {
+    margin-left: -9.2rem;
+    font-size: 2.2rem;
+}

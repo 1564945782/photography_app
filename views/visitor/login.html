@@ -1,0 +1,68 @@
+<% include header.html%>
+
+    <link rel="stylesheet" type="text/css" href="/css/login.css">
+
+    <title>登录</title>
+    </head>
+
+    <body>
+        <div class="loginning">
+            <div class="head01">
+                <h2>欢迎来到摄影论坛</h2>
+            </div>
+            
+            <div class="denglu">
+            <div class="content002">
+                <form class="layui-form" action="" id="loginnings">
+                    <div class="layui-form-item inp01 first01">
+                        <label class="layui-form-label" for="u_name">账&nbsp;&nbsp;&nbsp;&nbsp;号<i>|</i></label>
+                        <div class="layui-input-block u_name">
+                            <input type="text" name="u_name" id="u_name" value="leaf" required lay-verify="required" placeholder="请输入用户名/手机号" autocomplete="off" class="layui-input">
+                        </div>
+                        <!-- <div class="layui-form-mid layui-word-aux">请输入账号</div> -->
+                    </div>
+                    <div class="layui-form-mid layui-word-aux H"></div>
+
+                    <div class="layui-form-item inp01 sec01">
+                        <label class="layui-form-label" for="u_pwd">密&nbsp;&nbsp;&nbsp;&nbsp;码<i>|</i></label>
+                        <div class="layui-input-inline u_passwd">
+                            <input type="password" name="u_passwd" id="u_passwd" value="123123" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                        </div>
+                        <!-- <div class="layui-form-mid layui-word-aux">请输入密码</div> -->
+                    </div>
+                    <div class="layui-form-mid layui-word-aux H"></div>
+
+                    <div class="layui-form-item inp01 thir01">
+
+                        <div class="layui-input-inline thir02">
+                            <input type="text" name="coders" id="coders" required lay-verify="required" placeholder="验证码" autocomplete="off" class="layui-input">
+                        </div>
+                        <div class="layui-form-mid layui-word-aux coder">
+                            <img src="/coders" alt="" id="coderimg">
+                        </div>
+                    </div>
+                    <div class="layui-form-mid layui-word-aux H"></div>
+
+                    <div class="layui-form-item inp02">
+                        <div class="layui-input-block tijiao">
+                            <button type="button" class="layui-btn admin-login" lay-submit lay-filter="formDemo">登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+
+                        </div>
+                    </div>
+                </form>
+                <div class="tiaozhan01">
+                    <a href="/visitor/fast_login"><span id="">快捷登录</span></a>
+                    <span id="">|</span>
+                    <a href=""><span id="">忘记密码</span></a>
+                </div>
+
+                <div class="problems">
+                    <span id="">登录遇到问题？</span>
+                    <a href="/visitor/server"><span id="">联系客服</span></a>
+                </div>
+            </div>
+            </div>
+            <script src="/js/adminlogin.js "></script>
+    </body>
+
+    </html>

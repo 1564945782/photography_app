@@ -1,0 +1,176 @@
+* {
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.loginning {
+    position: absolute;
+    top: 0rem;
+    text-align: center;
+    background-color: #fff;
+    color: rgb(123, 121, 121);
+    right: 0rem;
+    left: 0rem;
+    bottom: 0rem;
+}
+
+.head01 {
+    height: 30%;
+    background-image: url(/img/main01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    color: #eeeded;
+    justify-content: center;
+    align-items: center;
+}
+
+.denglu {
+    height: 70%;
+    padding-top: 2rem;
+}
+
+.denglu a {
+    color: royalblue;
+    font-size: 0.1rem;
+}
+
+.denglu .content002{
+    height: 100%;
+}
+.denglu form{
+    height: 70%;
+}
+.denglu .inp01 {
+    width: 100%;
+    height: 20%;
+    padding: 1rem 2rem;
+    margin: 0rem;
+    display: flex;
+    justify-content: center;
+}
+
+.denglu .inp01 div {
+    width: 70%;
+    margin: 0rem;
+    background-color: #faffbd;
+}
+
+.denglu #loginnings .inp01 input {
+    outline-width: 0rem;
+    border: 0rem;
+    margin: 0rem;
+    padding: 0rem;
+    height: 100%;
+    background-color: rgb(250, 255, 189) !important;
+}
+
+.denglu .inp01 label {
+    width: 30%;
+    margin: 0rem;
+    padding: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 7.3rem; */
+    background-color: rgb(250, 255, 189);
+}
+
+.denglu .inp01 i {
+    margin-left: 1rem;
+    height: 1rem;
+    border-left: 0.1rem solid #828181;
+    color: #faffbd;
+}
+
+
+.denglu .thir01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.denglu .thir01 .thir02 {
+    width: 60%;
+    height: 100%;
+    padding: 0rem;
+    margin: 0rem;
+    background-color: #fff !important;
+}
+
+.denglu #loginnings .thir01 input {
+    width: 100%;
+    padding-left: 6rem;;
+}
+
+.denglu #loginnings .thir01 .coder {
+    margin: 0rem;
+    /* margin-top: -0.3rem; */
+    width: 40%;
+    height: 100%;
+    top: 0rem;
+    padding: 0rem !important;
+    background-color: #fff !important;
+}
+
+.thir01 .coder img {
+    width: 100%;
+    height: 100%;
+    margin: 0rem;
+    left: 0rem;
+    padding: 0rem;
+    right: 0rem;
+}
+
+.denglu .inp02 {
+    height: 20%;
+    padding: 1rem 2rem;
+    margin: 0rem;
+}
+
+.denglu .loginning .H {
+    color: #FF5722!important;
+    margin-left: 13rem;
+     padding: 0rem; 
+    height: 10%;
+    text-align: center;
+    width: 100%;
+    margin: 0rem;
+}
+
+.tijiao {
+    margin: 0rem;
+    height: 100%;
+}
+
+.tijiao button {
+    width: 100%;
+    height: 100%;
+    padding: 0rem;
+    font-size: 2rem;
+    border-radius: 0.71rem;
+    background-color: rgba(255, 235, 59, 0.7411764705882353);
+}
+
+.tiaozhan01 {
+    height: 25%;
+    padding-top: 2rem;
+}
+
+.tiaozhan01 a {
+    /*color: royalblue;*/
+    font-size: 1rem;
+}
+
+.problems {
+    height: 5%;
+    /*padding: 12.5rem 0rem 2rem;*/
+}
+
+.problems span {
+    font-size: 0.01rem;
+}
+
+.problems a {
+    margin: 0rem;
+}

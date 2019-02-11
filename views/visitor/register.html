@@ -1,0 +1,55 @@
+<% include header.html%>
+
+<link rel="stylesheet" type="text/css" href="/css/login.css">
+<link rel="stylesheet" type="text/css" href="/css/register.css">
+
+<title>注册</title>
+<style>
+	.denglu #loginnings .inp01 input:-webkit-autofill {
+    	background-color: #f6f6f6 !important;
+    	box-shadow: 0 0 0px 1000px #f6f6f6 inset !important;
+    	-webkit-box-shadow: 0 0 0px 1000px #f6f6f6 inset !important;
+	}
+</style>
+</head>
+
+<body>
+	<div class="loginning">
+		<div class="head01">
+			<h2>欢迎来到摄影论坛</h2>
+		</div>
+		<div class="denglu">
+			<form class="layui-form" action="" id="registers">
+				<div class="layui-form-item inp01 first01">
+					<label class="layui-form-label" for="u_name">用户名<i>|</i></label>
+					<div class="layui-input-block u_name">
+						<input type="text" name="u_name" id="u_name" required lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input" autocomplete="off">
+					</div>
+				</div>
+
+				<div class="layui-form-item inp01 sec01">
+					<label class="layui-form-label" for="u_pwd">密&nbsp;&nbsp;&nbsp;&nbsp;码<i>|</i></label>
+					<div class="layui-input-inline u_pwd">
+						<input type="password" name="u_pwd" id="u_pwd" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+					</div>
+				</div>
+
+				<div class="layui-form-item inp02">
+					<div class="layui-input-block tijiao">
+						<button class="layui-btn" type="button" id="register01" lay-submit lay-filter="formDemo">注&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;册</button>
+						
+					</div>
+				</div>
+			</form>
+			<div class="tiaozhan01" id="footer01">
+				<a href="/visitor/login"><span id="">已有账号，直接登录</span></a>
+
+			<div class="problems">
+				<span id="">注册遇到问题？</span>
+				<a href="/visitor/info_robot"><span id="">联系客服</span></a>
+			</div>
+		</div>
+		<script src="/js/register.js "></script>
+</body>
+
+</html>

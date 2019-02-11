@@ -1,0 +1,94 @@
+<% include top.html%>
+
+    <link rel="stylesheet" href="/css/per_works.css" />
+    <!-- <link rel="stylesheet" href="/css/info.css" /> -->
+<title>个人作品</title>
+</head>
+
+
+<body style="font-size: 12px;">
+  <!-- 顶部 -->
+    <div class="top">
+    	<a href="/visitor/my" class="left00">
+       		<span class="glyphicon glyphicon-menu-left left01"></span>
+    	</a>
+    	<a href="/visitor/info">
+			<span class="biaoti">个人作品</span>
+    	</a>
+   		<a href="/visitor/info" class="right00">
+			<span class="layui-icon layui-icon-more-vertical share"></span>
+   		</a>    		                 
+	</div>
+
+  <!-- 内容 -->
+	<div class="content">
+  <div class="xunhuan">
+  <% for (let c of works_list){%> 
+  <div class="works01">
+    
+    <div class="header02">      
+      <div class="touxiang">
+        <img src="/img/main02.png"/>
+      </div>
+      <p><%= u_name%></p>
+      <p><%= c.addtimes%></p>     
+    </div>
+    <div class="title">
+      <a href=/visitor/per_wdetail?uid=<%= c.uid%>&w_uid=<%= uid%>&wid=<%= c.wid%>>
+      <span class="descript"><%= c.descript%></span>
+      </a>
+    </div>
+    <div class="picture01">
+      <ul>
+         <% for (let a of c.pic_address_list){%> 
+        <li class="first01"><img src=<%= `${a}`%>></li>
+        <% }%>
+      </ul>
+    </div>
+    <div style="clear: both;"></div>
+    <div class="comment02">
+      <p class="liulan">
+        <a href="">
+        <span class="glyphicon glyphicon-eye-open"></span>
+        <span id=""><%= c.saw_nums%></span>
+        </a>
+      </p>
+      <p class="liulan pinglun">
+        <a href="">
+        <i class="layui-icon layui-icon-reply-fill"></i>
+        <span id=""><%= c.com_nums%></span>
+        </a>
+      </p>
+      <p class="liulan zan">
+        <a href="">
+        <i class="layui-icon layui-icon-face-smile-b"></i>  
+        <span id=""><%= c.zan_nums%></span>
+        </a>
+      </p>
+    </div>
+  </div>
+<% }%>
+</div>  
+
+
+
+
+  </div>
+
+
+
+
+
+<!-- 加载完了  -->
+<div class="footer">已显示全部内容...</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

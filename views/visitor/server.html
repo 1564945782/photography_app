@@ -1,0 +1,171 @@
+<% include top.html%>
+
+    <link rel="stylesheet" href="/css/server.css" />
+<title>小助手</title>
+</head>
+
+
+<body style="font-size: 12px;">
+    <div class="top">
+    	<a href="/visitor/login" class="left00">
+       		<span class="glyphicon glyphicon-menu-left left01"></span>
+    	</a>
+    	<a href="/visitor/info">
+			<span class="biaoti">小助手</span>
+    	</a>
+   		<a href="/visitor/info" class="right00">
+			<span class="layui-icon layui-icon-more-vertical share"></span>
+   		</a>    		                 
+	</div>
+
+  <div class="content">
+      <div class="talk_show" id="words">
+            <div class="atalk">
+
+            <img src="/img/tx01.jpg" alt="">
+                
+              <span class="glyphicon glyphicon-triangle-left right00" aria-hidden="true"></span>
+                <span class="asay">你好！很高兴为你服务！！！</span>
+            </div>
+            <div class="btalk">
+                <span class="bsay">你好！</span>
+                <i class="layui-icon layui-icon-triangle-r"></i>
+                <img src="/img/notx.png" alt="">
+            </div>
+            <div class="atalk">
+
+            <img src="/img/tx01.jpg" alt="">
+                
+              <span class="glyphicon glyphicon-triangle-left right00" aria-hidden="true"></span>
+                <span class="asay">你好！很高兴为你服务！！！</span>
+            </div>
+            <div class="btalk">
+                <span class="bsay">你好！</span>
+                <i class="layui-icon layui-icon-triangle-r"></i>
+                <img src="/img/notx.png" alt="">
+            </div>
+            <div class="btalk">
+                <span class="bsay">你好！</span>
+                <i class="layui-icon layui-icon-triangle-r"></i>
+                <img src="/img/notx.png" alt="">
+            </div>
+            <div class="btalk">
+                <span class="bsay">你好！</span>
+                <i class="layui-icon layui-icon-triangle-r"></i>
+                <img src="/img/notx.png" alt="">
+            </div>
+
+            <div class="btalk">
+                <span class="bsay">你好！</span>
+                <i class="layui-icon layui-icon-triangle-r"></i>
+                <img src="/img/notx.png" alt="">
+            </div>
+            <div class="btalk">
+                <span class="bsay">你好！</span>
+                <i class="layui-icon layui-icon-triangle-r"></i>
+                <img src="/img/notx.png" alt="">
+            </div>
+            <div class="btalk">
+                <span class="bsay">你好！</span>
+                <i class="layui-icon layui-icon-triangle-r"></i>
+                <img src="/img/notx.png" alt="">
+            </div>
+            <div class="btalk">
+                <span class="bsay">你好！</span>
+                <i class="layui-icon layui-icon-triangle-r"></i>
+                <img src="/img/notx.png" alt="">
+            </div>
+            <div class="btalk">
+                <span class="bsay">你好！</span>
+                <i class="layui-icon layui-icon-triangle-r"></i>
+                <img src="/img/notx.png" alt="">
+            </div>
+            <div class="btalk">
+                <span class="bsay">你好！</span>
+                <i class="layui-icon layui-icon-triangle-r"></i>
+                <img src="/img/notx.png" alt="">
+            </div>
+            <div class="btalk">
+                <span class="bsay">你好！</span>
+                <i class="layui-icon layui-icon-triangle-r"></i>
+                <img src="/img/notx.png" alt="">
+            </div>
+            </div>
+        </div>
+
+  </div>
+	
+<!-- 发送底部 -->
+  <nav class="navbar navbar-default navbar-fixed-bottom footer02">
+      <div class="comment02">
+
+        <div class="yuyin_send"><i class="layui-icon layui-icon-voice"></i></div>
+
+        <div class="content_send"><input type="text" placeholder="" class="msg"></div>
+
+        <div class="submit_send">
+          <p>发送</p>
+        </div>
+        <div class="motions_send">
+          <a href="##">
+            <i class="layui-icon layui-icon-face-smile-b"></i>
+          </a>
+        </div>
+      </div>
+  </nav>
+
+
+
+
+
+
+<script>
+let send_p=document.querySelector('.submit_send p');
+let msg_input=document.querySelector('.msg');
+let talk_show=document.querySelector('.talk_show');
+let content=document.querySelector('.content');
+content.style.height=document.body.clientHeight&&document.documentElement.clientHeight/32-4+'rem';
+    let msg_end=document.querySelector('.talk_show div:last-child');
+    console.log(document.querySelector('.talk_show div:last-child'));
+msg_end.scrollIntoView();
+send_p.onclick=function(){
+  let msg=msg_input.value;
+  if(msg==''){
+    alert('不能为空');
+  }else{
+    creatmsg(msg);
+  }
+}
+function creatmsg(a){
+  let str = '<div class="btalk"><span class="bsay">' + a +'</span><i class="layui-icon layui-icon-triangle-r"></i><img src="/img/notx.png" alt=""></div>';
+    talk_show.innerHTML +=str; 
+     let data={};
+    data.send=a;
+    msg_input.value='';
+    document.querySelector('.talk_show div:last-child').scrollIntoView();
+    // console.log(a);
+    console.log(data);
+    // console.log(JSON.stringify(data));
+
+    let xhr=new XMLHttpRequest();
+    // 
+    xhr.open('POST','/admin/server');
+    xhr.setRequestHeader('Content-Type','application/json');
+    xhr.send(JSON.stringify(data));
+    xhr.onreadystatuschange=function(){
+      if(xhr.readyState==4 && xhr.status==200){
+        let result=JSON.parse(xhr.responseText);
+        console.log(result);
+        console.log('发送成功！');
+      }
+    }
+
+
+}
+
+</script>
+
+
+
+</body>
+</html>

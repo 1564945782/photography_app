@@ -1,0 +1,13 @@
+wid	int	11	0	0	-1	0	0	0		0					-1	0
+uid	char	11	0	-1	0	0	0	0		0		utf8	utf8_general_ci		0	0
+u_name	char	6	0	-1	0	0	0	0		0		utf8	utf8_general_ci		0	0
+descript	varchar	6555	0	-1	0	0	0	0		0		gbk	gbk_bin		0	0
+pic_address	varchar	21845	0	-1	0	0	0	0		0		gbk	gbk_bin		0	0
+pic_classify	varchar	255	0	-1	0	0	0	0		0	分类	utf8	utf8_general_ci		0	0
+addtimes	datetime	0	0	-1	0	0	0	0		0					0	0
+zan_nums	int	20	0	-1	0	0	0	0	0	0					0	0
+zan_ren	varchar	255	0	-1	0	0	0	0		0	点赞的好友id集合	utf8	utf8_general_ci		0	0
+com_nums	int	20	0	-1	0	0	0	0	0	0					0	0
+comment	varchar	655	0	-1	0	0	0	0		0		utf8	utf8_general_ci		0	0
+saw_nums	int	20	0	-1	0	0	0	0	0	0					0	0
+w_status	int	1	0	-1	0	0	0	0	1	0					0	0

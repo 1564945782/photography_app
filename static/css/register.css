@@ -1,0 +1,23 @@
+.denglu .inp01 label {
+    
+    background-color: #f6f6f6;
+}
+/*.denglu #loginnings .inp01 input {
+    
+    background-color: #f6f6f6 !important;
+}*/
+.denglu #loginnings .inp01 input::-webkit-input-placeholder{
+
+　　color: blue;
+
+　　}
+.denglu .inp01 i {
+    color: #f6f6f6;
+}
+.tijiao button {
+    background-color: rgba(189, 188, 178, 0.7411764705882353);
+}
+/*.denglu #loginnings .inp01 input {
+    background-color: #f6f6f6 !important;
+}*/
+

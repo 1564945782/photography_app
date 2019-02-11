@@ -1,0 +1,236 @@
+html {
+	font-size: 6.25rem;
+}
+
+body {
+	background: rgb(239, 239, 239);
+	font-size: 0.14rem;
+}
+
+body,a,h3,span {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+
+.header {
+	background: pink;
+	height: 0.65rem;
+	color: white;
+	padding-left: 0.17rem;
+	padding-right: 0.25rem;
+	text-align: center;
+	line-height: 0.65rem;
+}
+
+.header>a {
+	color: white;
+	float: left;
+}
+
+.header>.btn {
+	float: right;
+	padding-top: 0.1rem;
+}
+
+.btn>span {
+	border-radius: 100%;
+	display: block;
+	width: 0.04rem;
+	height: 0.04rem;
+	background: white;
+	margin-top: 0.03rem;
+}
+
+.username {
+	height: 0.72rem;
+	background: white;
+	border-bottom: 1px solid #E0E0E0;
+	padding-left: 0.17rem;
+	padding-right: 0.12rem;
+	padding-top: .12rem;
+}
+
+.username>img {
+	width: 0.48rem;
+	height: 0.48rem;
+	object-fit: cover;
+	margin-right: 0.12rem;
+	float: left;
+	border-radius: 0.1rem;
+}
+
+.username>.text {
+	height: 0.48rem;
+	float: left;
+}
+
+.username .name {
+	font-size: 0.15rem;
+	margin-bottom: 0.08rem;
+}
+
+.username .haha {
+	font-size: 0.12rem;
+	color: #5D5D5D;
+}
+
+.right {
+	/*font-size: 0.12rem;*/
+	float: right;
+	margin-top: 0.12rem;
+}
+
+/*.right>a {
+	font-size: 0.12rem;
+}*/
+
+.right>.img,
+.right>.back {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.right>.img img{
+	width: 0.15rem;
+	height: 0.15rem;
+	
+	margin-top: -0.03rem;
+}
+
+.address,
+.safe,
+.shezhi,
+.secrt,
+.view,
+.other {
+	font-size: 0.14rem;
+	padding-left: 0.17rem;
+	border-bottom: 1px solid #E0E0E0;
+	height: 0.65rem;
+	line-height: 0.65rem;
+	padding-right: 0.12rem;
+	background: white;
+}
+
+.safe {
+	margin-top: 0.13rem;
+	margin-bottom: 0.13rem;
+}
+
+.view {
+	margin-bottom: 0.13rem;
+}
+
+.address>a,
+.safe>a,
+.shezhi>a,
+.secrt>a,
+.view>a,
+.other>a {
+	float: right;
+}
+
+.footer {
+   margin: 0rem;
+    padding: : 0rem;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	
+}
+.footer a{
+    display: inline-block;
+    width: 1.5rem;
+    height: 0.5rem;
+    text-align: center;
+    line-height: 0.5rem;
+    border: 0.01rem solid rgb(255, 31, 31);
+    color: rgba(255, 0, 0, 0.87);
+    background-color: #fff;
+}
+.bb form{
+	margin:0rem;
+	padding: 0rem;
+	width: 100%;
+	height: 0.5rem;
+	margin-top: 0.05rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#keyword{
+
+    text-align: center;
+	border: 0px;
+	outline:none;
+	cursor: pointer;
+	height: 0.5rem;
+	border-radius:  0.5rem 0 0 0.5rem ;
+}
+#search_tap01{    
+    width: 0.5rem;
+    text-align: center;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+#searching span{
+	top: 0rem;
+	background-color: #fff;
+	line-height: 0.5rem;
+    font-size: 0.19rem;
+    display: inline-block;
+    margin:0rem;
+	padding: 0rem;
+}
+p{
+	margin-left: 0.3rem;
+	margin-top: 0.2rem;
+}
+.container {
+    margin: 0rem;
+    padding: 0rem 0.02rem;
+}
+
+.container:nth-child(3n) {
+    background-color: palevioletred;
+}
+
+.pic01 #uid,
+#wid,
+#w_uid {
+    display: none;
+}
+
+.pic01 .aaa {
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem;
+    padding: 0.01rem;
+
+     margin-bottom: 0.01rem;
+}
+
+.pic01 .aaa a {
+    height: 1.46rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem;
+    margin: 0rem;
+    border: 0.01rem solid #bbb;
+    background-color: #fff;
+}
+.pic01 .aaa div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic01 .aaa img {
+    height: 1.4rem;
+    width: 1.26rem;
+}

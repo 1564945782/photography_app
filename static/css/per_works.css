@@ -1,0 +1,91 @@
+body{
+	background-color: rgb(239, 233, 233);
+}
+.content{
+    margin-top: 2rem;
+    /*background-color: #fff;*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    /*height: 7rem;*/
+	/*background-image: url(/img/nocontent01.png);*/
+}
+
+.works01 {
+    margin-top: 0.2rem;
+    background-color: #fff;
+}
+
+.header02 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.title a {
+    padding: 0.5rem 1rem;
+    border-top: 0.05rem solid #efefef;
+    display: block;
+    text-indent: 0.2rem;
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+    /* white-space: nowrap; */
+    color: #333;
+}
+.title a:hover {
+    text-decoration: none;
+}
+
+.tiaozhuan {}
+
+.header02 .touxiang img {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background-color: burlywood;
+}
+
+.header02 p {
+    color: palevioletred;
+}
+
+.works01 .picture01{
+
+}
+.works01 .picture01 ul {
+    /*display: flex;*/
+    padding: 0 0.25rem;
+    /*justify-content: space-around;*/
+}
+
+.works01 .picture01 ul li {
+    /*list-style: none;*/
+    /*width: 11.1rem;*/
+    /*height: 11.1rem;*/
+    float: left;
+    margin: 0.02rem;
+}
+
+.works01 .picture01 ul li img {
+    width: 3.05rem;
+    height: 3.05rem;
+    border: 0.02rem solid rgb(228, 220, 220);
+    padding: 0.01rem;
+}
+
+.works01 .comment02 {
+    height: 1.5rem;
+    line-height: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.8rem;
+}
+
+.liulan a {
+    color: #333;
+    margin: 0rem;
+}
+.footer{
+	text-align: center;
+	margin: 0.5rem 0rem;
+}

@@ -1,0 +1,33 @@
+body{
+	background: rgb(239, 239, 239);
+}
+.navbar{
+	background-color: pink;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.navbar a{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    text-decoration: none;
+    color:#fff;
+}
+.navbar a:hover{
+    color:gainsboro;
+    text-decoration: none;
+}
+.navbar a p{
+    margin: 0rem;
+}
+
+
+
+.navbar .menu03 span{
+	font-size: 3.3rem;
+}
+

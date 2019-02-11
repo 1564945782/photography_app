@@ -1,0 +1,91 @@
+*{
+	margin: 0rem;
+	padding: 0rem;
+}
+.back01{
+	background-image: url(/img/bgc01.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #f7f7f7;	
+    top: 0rem;
+    position: absolute;
+    left: 0rem;
+    right: 0rem;
+    bottom: 0rem;
+}
+.head01{
+    height: 50%;
+	/*color: #f7f7f7;*/	
+}
+.head01 .head001{
+    height: 100%;
+       display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back01 a{
+    color: #fff;
+    
+}
+@font-face {
+    font-family: 'mangguo';
+    src: url('/font/AaMangoBrother.ttf') format('truetype');
+}
+.head01 h2{
+	font-family: mangguo;
+    padding-top: 6rem;
+    margin: 0rem;
+    padding-bottom: 1rem;
+    font-size: 9rem;
+}
+.head01 p{
+	padding-top: 1rem;
+}
+.fast{
+    height: 10%;
+}
+.fast_logo{
+    height: 20%;
+    padding: 0rem;
+    margin: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fast_logo i{
+	font-size: 5rem;
+    /* color: #00BCD4; */
+    padding: 0rem 2rem;
+}
+.loginning{
+	padding-top: 0.5rem;
+	padding-bottom: 2.5rem;
+}
+.seeing{
+	padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.16);
+}
+.back01 .navbar{
+    height: 6rem;
+        opacity: 0.5;
+    background-color: rgba(126, 126, 126, 0);
+}
+.back01 .navbar .seeing{
+    margin: 0rem;
+    padding: 0rem;
+    height: 6rem;
+    color: #fff;
+    width: 100%;
+}
+.back01 .navbar .seeing a{
+    margin: 0rem;
+    padding: 0rem;
+    height: 6rem;
+    width: 100%;
+    color: #fff;
+    z-index: 9999;
+    text-align: center;
+    line-height: 6rem;  
+    font-size: 2rem;
+}

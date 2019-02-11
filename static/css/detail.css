@@ -1,0 +1,201 @@
+/*顶部*/
+.head03{
+	line-height: 5.5rem;
+    background-color: pink;
+    height: 5.5rem;	
+}
+.head03 a{
+    margin: 0rem 1rem 0rem 1rem;
+}
+.head033{
+	height: 5.5rem;
+    line-height: 5.5rem;
+    text-align: center;
+    margin-top: -5.5rem;
+}
+/*表单*/
+.tongyi{
+   background-color: #fff;
+    height: 5.5rem;
+    
+}
+.tongyi div{
+    height: 5.5rem;
+    margin: 0rem;
+    padding: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tongyi .aaa label{
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem;
+    height: 5.5rem;
+    line-height: 5.5rem;
+    text-align: center; 
+}
+.tongyi .bbb{}
+.tongyi .bbb div{
+   width: 100%;
+}
+.tongyi .bbb input{
+    width: 100%;
+    border: 0rem;
+    margin: 0rem;
+    padding: 0rem;
+}
+.tongyi .ccc{
+    padding-right: 1rem;
+}
+.tongyi .ccc span{
+        margin: 0rem;
+    padding: 0rem;
+}
+
+/*头像*/
+.touxiang01{
+    /* background-color: #fff;
+    height: 5.5rem;*/
+    /*display: flex;
+    justify-content: space-between;
+    align-items: center;*/
+}
+.touxiang01 div{
+   /* height: 5.5rem;
+    margin: 0rem;
+    padding: 0rem;
+     width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+.touxiang01 .aaa{}
+.touxiang01 .aaa img{
+    height: 3rem;
+    width: 3rem;
+    border-radius:50%;
+}
+.touxiang01 .bbb{}
+.touxiang01 .ccc{}
+.touxiang01 .aaa label{
+   text-align: left;
+    padding-left: 3rem;
+}
+.touxiang01 .bbb .inp01{
+   /* margin: 0rem;
+    padding: 0rem;*/
+}
+.touxiang01 .aaa .inp01 input{
+	/*height: 5.5rem;*/
+    display: none; 
+    /*width: 100%;*/
+    /*margin: 0rem;*/
+    /*padding: 0rem;*/
+}
+.touxiang01 .ccc .pic01{
+	/*margin-left: -5rem;
+	width: 2.34rem;
+	height: 2.34rem;
+	border-radius: 50%;*/
+}
+.touxiang01 .ccc .pic01 img{
+	/*width: 2.34rem;
+	height: 2.34rem;
+	border-radius: 50%;*/
+}
+.touxiang01 .ccc span{
+
+}
+
+/*昵称/性别*/
+.text01 input{
+   /* width: 16rem;
+    margin-left: -6rem;	
+    border: 0rem;*/
+}
+
+/*性别*/
+.sex01 .bbb{}
+.sex01 .bbb .xuanze{
+    width: 60%;
+}
+.sex01 .bbb .xuanze input{}
+
+
+/*生日*/
+.both01 .both02{
+    margin: 0rem;
+    display: flex;
+}
+
+.both01 input{
+    /*width: 14.5rem;
+    margin-left: 4.5rem;	
+    border: 0rem;*/
+}
+
+/*手机,邮箱*/
+.yanzheng .yanzheng01{
+    margin: 0rem;
+    padding: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+*/}
+.yanzheng input{
+	/*border: 0rem;*/
+}
+
+/*职业*/
+.profession label{
+	
+}
+.profession .profession01{
+   /*margin: 0rem;
+    width: 16rem;
+    margin-left: 5rem;*/
+}
+.profession select{
+	/*margin: 0rem;
+    padding: 0rem;	*/
+}
+
+.profession select option{
+	
+}
+.profession span{
+	/*margin-left: -2.5rem;*/
+}
+
+/*地址*/
+.address01 .bbb .address02{
+    margin: 0rem;
+    padding: 0rem;
+    width: 30%;	
+}
+
+/*个人说明*/
+.person01{
+	height: 14rem;	
+}
+.person01 .aaa{
+    height: 14rem;
+    margin: 0rem;
+    padding: 0rem;
+}
+.person01 .aaa label{
+    margin: 0rem;
+    padding: 0rem;
+}
+.person01 .bbb{
+    height: 14rem;
+}
+.person01 .bbb .person02{
+    height: 14rem;
+}
+.person01 .bbb .person02 textarea{
+    width: 80%;
+    margin: 0rem;
+    padding: 1rem;
+}

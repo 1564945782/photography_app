@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>上传图片</title>
+		<link rel="shortcut icon" href="/img/jieta01.ico" />
+
+		<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+		<!--<link rel="stylesheet" type="text/css" href="/mobile/jquery.mobile-1.4.5.min.css">-->
+			<link rel="stylesheet" href="/layui/css/layui.css">
+		<link rel="stylesheet" type="text/css" href="/css/add.css">
+
+		<script src="/jquery/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
+		 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<!--<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>-->
+		
+		<!--<script src="/mobile/jquery.mobile-1.4.5.min.js" type="text/javascript" charset="utf-8"></script>-->
+	</head>
+
+	<body>
+		<!-- 顶部切换 -->
+		<div class="header">
+			<a href="/visitor/app">
+				<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+			</a>
+			上传
+			<div class="btn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<!-- 内容部分 -->
+		<div class="container">
+
+			<form class="layui-form form-horizontal" action="" id="addpro" enctype="multipart/form-data">
+				<div class="layui-form-item form-group">
+					<!-- 顶部输入文字信息 -->
+					<textarea id="text01" class="form-control" rows="6" placeholder="分享新鲜事......"></textarea>		
+					<!--中间选择的分类标签 -->	
+					<div>
+						<label for="images" class="col-sm-2 control-label wenben01">添加标签...</label>
+						<label class="checkbox-inline checkbox01">
+						  <input type="checkbox" id="inlineCheckbox1" value="人像"> 人像
+						</label>
+						<label class="checkbox-inline checkbox01">
+						  <input type="checkbox" id="inlineCheckbox2" value="风光"> 风光
+						</label>
+						<label class="checkbox-inline checkbox01">
+						  <input type="checkbox" id="inlineCheckbox3" value="植物"> 植物
+						</label>
+						<label class="checkbox-inline checkbox01">
+						  <input type="checkbox" id="inlineCheckbox3" value="动物"> 动物
+						</label>
+						<label class="checkbox-inline checkbox01">
+						  <input type="checkbox" id="inlineCheckbox3" value="生活瞬间"> 生活瞬间
+						</label>
+						<label class="checkbox-inline checkbox01">
+						  <input type="checkbox" id="inlineCheckbox1" value="创新"> 创新
+						</label>
+						<label class="checkbox-inline checkbox01">
+						  <input type="checkbox" id="inlineCheckbox2" value="简约"> 简约
+						</label>
+						<label class="checkbox-inline checkbox01">
+						  <input type="checkbox" id="inlineCheckbox3" value="小清新"> 小清新
+						</label>
+						<label class="checkbox-inline checkbox01">
+						  <input type="checkbox" id="inlineCheckbox3" value="旅游"> 旅游
+						</label>
+						<label class="checkbox-inline checkbox01">
+						  <input type="checkbox" id="inlineCheckbox3" value="卡通"> 卡通
+						</label>	
+					</div>
+
+					<div class="col-sm-12  toppic">
+						<!-- 点击标签上传图片 -->
+						<label for="myimg" class="myimg">
+							<span class="glyphicon glyphicon-plus"></span>
+						</label>
+						<ul></ul>
+						<div style="clear: both;"></div>
+						<!--上传文件-->
+						<input type="file" value="相机" multiple name="myimg" id="myimg" accept="image/*" capture="camera">
+						<!--保存存入数据库   隐藏的输入框 -->
+						<input type="button" value="描述" name="descript" id="descript">
+						<input type="button" value="压缩地址" name="pic_address" id="pic_address">
+						<input type="button" value="原图地址" name="origin_address" id="origin_address">
+						<input type="button" value="分类" name="pic_classify" id="pic_classify">
+					</div>
+				</div>
+
+				<!-- 点击保存 -->
+				<div class="layui-form-item">
+                	<div class="layui-input-block">
+                    	<button class="layui-btn btn btn-primary" type="button" lay-submit lay-filter="addpro" id="saveimg">保存</button>
+                	</div>
+            	</div>
+
+			</form>
+		</div>
+<script src="/js/add.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

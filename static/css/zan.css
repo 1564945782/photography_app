@@ -1,0 +1,7 @@
+.content{
+    margin-top: 0.1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 7rem;
+	background-image: url(/img/nocontent02.gif);
+}
