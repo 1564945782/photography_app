@@ -71,13 +71,13 @@
 .works01 .picture01 ul li {
     float: left;
     list-style: none;
-    width: 11.1rem;
+    width: 50%;
     height: 11.1rem;
-    margin: 0.02rem;
+    margin: 0.02rem 0;
 }
 
 .works01 .picture01 ul li img {
-    width: 11.05rem;
+    width: 99%;
     height: 11.05rem;
     border: 0.1rem solid #bbb;
     padding: 0.01rem;

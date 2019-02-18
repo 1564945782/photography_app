@@ -77,7 +77,7 @@ router.get('/main_searching', (req, res) => {
 
     if(req.session.uid==undefined){
         console.log('未登录......');
-        res.json({ r: 'nologin' });
+        res.render('visitor/fast_login',data);
     }
     
     else{

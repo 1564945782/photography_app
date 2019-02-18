@@ -8,7 +8,7 @@
 
     <body>
         <div class="header">
-            <a href="/visitor/my_per_works">
+            <a href="/visitor/my_per_works?#">
                 <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
             </a>
             个人作品详情
@@ -70,7 +70,7 @@
                 <p class="liulan pinglun">
                     <a href="">
                         <i class="layui-icon layui-icon-reply-fill"></i>
-                        <span id=""><%= works_detail[0].com_nums%></span>
+                        <span id=""><%= com_list_nums%></span>
                     </a>
                 </p>
                 <p class="liulan zan">
@@ -87,12 +87,19 @@
             <div class="friends">
                 
                 <div class="touxiang">
-                    <a href="#"> <img src="/img/notx.png" /></a>
-                    <p>匿名</p>
-                    <span id="time01"> <%= b.time01%></span>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-md-offset-3 touxiang to02">
+                        <a href="#"> <img src="/img/notx.png" /></a>
+                        <p>匿名</p>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-md-offset-3 to02">
+                        <p></p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-md-offset6 times01 to02">
+                        <span id="time01"> <%= b.time01%></span>
+                    </div>
                 </div>
 
-                <div class="comments03"><%= b.comments%></div>
+                <div class="comments03"><p><%= b.comments%></p></div>
 
             </div>
             <% }%>
@@ -107,14 +114,19 @@
 
         <nav class="navbar navbar-default navbar-fixed-bottom footer02">
             <div class="comment02">
-                <input type="text" placeholder="评论" class="pinglun01">
-                <div id="send01">发送</div>
-                <p class="liulan zan">
-                    <a href="##">
-                        <i class="layui-icon layui-icon-face-smile-b"></i>
-                        <span id="zan"><%= works_detail[0].zan_nums%></span>
-                    </a>
-                </p>
+                <div class="col-xs-8 col-sm-8 col-md-8 col-md-offset-8 to03">
+                    <input type="text" placeholder="评论" class="pinglun01" id="pinglun01" name="pinglun01">
+                </div>
+
+                <div class="col-xs-2 col-sm-2 col-md-2 col-md-offset-2 to03" id="send01"><p>发送</p></div>
+                <div class="col-xs-2 col-sm-2 col-md-2 col-md-offset-2 to03">
+                    <p class="liulan zan">
+                        <a href="##">
+                            <i class="layui-icon layui-icon-face-smile-b"></i>
+                            <span id="zan"><%= works_detail[0].zan_nums%></span>
+                     </a>
+                    </p>
+                </div>
             </div>
         </nav>
 

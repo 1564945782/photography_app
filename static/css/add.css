@@ -52,6 +52,17 @@ span {
     text-align: left;
     padding-left: 0.2rem;
 }
+.myingclass{
+	margin: 0;
+    padding: 0;
+    position: relative;
+    width: 47.5%;
+    height: 1.2rem;
+    top: 15px;
+    left: 0.02rem;
+    display: inline-block;
+    z-index: 2;
+}
 .myimg {
 	margin-top: 0.1rem;
 	height: 1rem;
@@ -62,6 +73,12 @@ span {
 	display: inline-block;
 	text-align: center;
 	line-height: 1rem;
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .form-group #text01 {
@@ -78,21 +95,34 @@ span {
 }
 .toppic ul{
 	padding: 0rem;
-	display: inline;
+	display: inherit;
+	position: relative;
+    top: -109px;
+    z-index: 1;
 }
 .toppic ul img{
-    width: 0.98rem;
-    height: 0.98rem;
-    border: 0.01rem solid #bbbbbb2e;
+   width: 96.5%;
+    height: 99%;
+    border: 0.01rem solid #8e8e8e2e;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
-
+.toppic ul li:nth-child(1){
+    margin-left: 49%;
+}
 .toppic ul li{
-	display: inline-block;
+    display: inline-block;
     list-style: none;
-    width: 1rem;
-    height: 1rem;
+    width: 49%;
+    /* background-color: yellow; */
+    height: 1.22rem;
     /* margin-left: 0.1rem; */
-    padding: 0.01rem;
+    /* padding: 0.01rem; */
+    position: relative;
 }
 
 #myimg{
@@ -107,6 +137,7 @@ span {
 
 .toppic{
 	background-color: #fff;
+	min-height: 1.6rem;
 }
 
  .checkbox01{    padding-left: 15px;}

@@ -95,8 +95,8 @@ app.get('/coders', (req, res) => {
 
 // 方便测试---后面要删除
 app.use(function(req, res, next) {
-    req.session.uid = 1;
-    req.session.u_name = 'leaf';
+    req.session.uid = 2;
+    req.session.u_name = 'lan';
     next();
 	//if(req.session.uid==undefined){res.redirect('/fast_login.html');}
 	//else{next();}

@@ -133,7 +133,13 @@ function UpladFile(a,b) {
     console.log(c_address00);        
     console.log(c_address00.value);  
     c_address.push(b)      
-    c_address00.value=JSON.stringify(c_address).toString();    
+    c_address00.value=JSON.stringify(c_address).toString();  
+     console.log(".toppic的高度========"+document.querySelector('.toppic'));
+    console.log(document.querySelector('.toppic').clientHeight );  
+    // document.querySelector('.toppic').style.height =document.querySelector('.toppic').clientHeight*1-50+"px";
+    console.log(document.querySelector('.toppic').clientHeight );  
+
+    console.log(".toppic的高度========");  
   }else { 
     console.log("上传大于1M，进行压缩上传中");
     // quality: 0.2为压缩的质量大小，取值范围（0-1）
@@ -222,6 +228,8 @@ function convertCanvasToImage(base64) {
     let str='';
     str += `<li><img src="${a}"></li>`;           
     document.querySelector('.toppic ul').innerHTML += str;
+    console.log(".toppic的高度========"+document.querySelector('.toppic'));
+    console.log(".toppic的高度========");
     c_address00.value=JSON.stringify(c_address).toString();
     // #####
   })
